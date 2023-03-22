@@ -1,6 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     color: white;
     background-color: black;
+}
+
+header {
+    width: 30%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+h1 {
+    margin: 1rem;
+}
+
+.my-container {
+    width: 70%;
+    margin: 3rem auto;
+}
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.my-col {
+    width: calc(100% / 3 - 1.5rem);
+    /* height: 200px; */
+}
+.card {
+    color: black;
+    text-align: center;
 }
 
 ul li {

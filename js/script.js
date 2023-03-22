@@ -52,6 +52,7 @@ const ourTeam = [
         foto: "barbara-ramos-graphic-designer.jpg",
     },
 ]
+/*
 const listTeam = document.querySelector('.list-team');
 console.log(listTeam);
 
@@ -63,3 +64,24 @@ for (let i = 0; i < ourTeam.length; i++) {
 }
 
 listTeam.innerHTML = member;
+*/
+
+// BONUS 1-2
+const myMembers = document.querySelector('.my-row');
+let member = "";
+for (let i = 0; i < ourTeam.length; i++) {
+    const curMember = ourTeam[i];
+    member += `
+    <div class="my-col">
+        <div class="card">
+            <img src="img/${curMember.foto}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4>${curMember.nome}</h4>
+                <p class="card-text">${curMember.ruolo}</p>
+            </div>
+        </div>
+    </div>
+    `;
+}
+console.log(member);
+myMembers.innerHTML = member;
